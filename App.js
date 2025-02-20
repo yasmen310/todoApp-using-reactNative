@@ -8,20 +8,6 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
-// const DATA=[
-//   {
-//     id:'1',
-//     title:'First Item',
-//   },
-//   {
-//     id:'2',
-//     title:'Second Item',
-//   },
-//   {
-//     id:'3',
-//     title:'Third Item',
-//   }
-// ];
 export default function App() {
   const [todo, setTodo] = useState([
     {
@@ -34,18 +20,6 @@ export default function App() {
     },
   ]);
   return (
-    // <SafeAreaView style={styles.container}>
-    //   <Text style={styles.appHeader}>Todo app</Text>
-    //   <FlatList data={DATA} keyExtractor={(item)=>item.id} renderItem={({item})=>(
-    //     <View style={styles.item}>
-    //          <Text style={styles.title}>{item.title}</Text>
-    //     </View>
-    //   )}/>
-    // </SafeAreaView>
-    // {/* <Button/> */}
-    // {/* <Pressable style={styles.submitBtn}>
-    //  <Text style={{color:'#fff'}} activeOpacity={.8}>Submit</Text>
-    // </Pressable> */}
     <View style={styles.container}>
       <Text style={styles.appHeader}>Todo app</Text>
       <TextInput style={styles.input} placeholder="Enter Title" />
